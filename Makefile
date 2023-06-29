@@ -1,13 +1,13 @@
 build: crd
-	@docker-compose -f srcs/docker-compose.yaml build
+	@sudo docker-compose -f srcs/docker-compose.yaml build
 up:
-	@docker-compose -f srcs/docker-compose.yaml up
+	@sudo docker-compose -f srcs/docker-compose.yaml up
 down:
-	@docker-compose -f srcs/docker-compose.yaml down
+	@sudo docker-compose -f srcs/docker-compose.yaml down
 clean: rmd
-	@docker-compose -f srcs/docker-compose.yaml down --volumes
+	@sudo docker-compose -f srcs/docker-compose.yaml down --volumes
 
 crd:
-	@mkdir ~/data ~/data/wp ~/data/db
+	@mkdir /home/mmardi/data /home/mmardi/data/wp /home/mmardi/data/db
 rmd:
-	@rm -rf ~/data
+	@sudo rm -rf   /home/mmardi/data
