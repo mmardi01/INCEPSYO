@@ -6,4 +6,4 @@ COPY tools/db.sh .
 
 RUN chmod +x db.sh
 
-ENTRYPOINT ["./db.sh"]
+CMD  ["./db.sh"]

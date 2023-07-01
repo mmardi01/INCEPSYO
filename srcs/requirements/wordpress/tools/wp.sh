@@ -4,19 +4,17 @@ curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.pha
 
 chmod +x wp-cli.phar
 
-mkdir /var/www/html/
 
-mv wp-cli.phar /usr/local/bin/wp 
 
-wp core download  --path="/var/www/html/" --allow-root
+./wp-cli.phar core download  --path="/var/www/html/" --allow-root
 
 sleep 15
 
-wp config create --dbname=$DB_NAME --dbuser=$DB_USER --dbpass=$USER_PASSWORD --dbhost=$DB_HOST --path=/var/www/html/ --allow-root
+./wp-cli.phar config create --dbname=$DB_NAME --dbuser=$DB_USER --dbpass=$USER_PASSWORD --dbhost=$DB_HOST --path=/var/www/html/ --allow-root
 
-wp core install --url=localhost --title="Hello World" --admin_user=$ADMIN_USERNAME --admin_password=$USER_PASSWORD  --admin_email=mmardi@gmail.com --path=/var/www/html/ --allow-root
+./wp-cli.phar core install --url=localhost --title="Hello World" --admin_user=$ADMIN_USERNAME --admin_password=$USER_PASSWORD  --admin_email=mmardi@gmail.com --path=/var/www/html/ --allow-root
 
-wp user create $DB_USER mardi@gmail.com --role=author --user_pass=$USER_PASSWORD --path=/var/www/html/ --allow-root
+./wp-cli.phar user create $DB_USER mardi@gmail.com --role=author --user_pass=$USER_PASSWORD --path=/var/www/html/ --allow-root
 
 mkdir run/php
 

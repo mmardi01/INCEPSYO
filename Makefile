@@ -1,4 +1,4 @@
-build: crd
+build:
 	@sudo docker-compose -f srcs/docker-compose.yaml build
 up:
 	@sudo docker-compose -f srcs/docker-compose.yaml up
