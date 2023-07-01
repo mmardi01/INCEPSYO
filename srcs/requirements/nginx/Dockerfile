@@ -8,4 +8,4 @@ RUN openssl req -x509 -nodes -newkey rsa:2048 -keyout /etc/nginx/ssl/mykey.key -
 
 COPY tools/nginx.conf /etc/nginx/conf.d/
 
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["nginx", "-g", "daemon off;"] 

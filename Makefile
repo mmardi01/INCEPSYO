@@ -10,4 +10,4 @@ clean: rmd
 crd:
 	@mkdir /home/mmardi/data /home/mmardi/data/wp /home/mmardi/data/db
 rmd:
-	@sudo rm -rf   /home/mmardi/data
+	@sudo rm -rf   /home/mmardi/data 

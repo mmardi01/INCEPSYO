@@ -6,4 +6,4 @@ COPY tools/wp.sh .
 
 RUN chmod +x wp.sh
 
-CMD ["./wp.sh"]
+CMD ["./wp.sh"]  
