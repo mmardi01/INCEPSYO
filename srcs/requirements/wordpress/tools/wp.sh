@@ -14,7 +14,7 @@ sleep 15
 
 ./wp-cli.phar core install --url=$DOMAIN_NAME --title="Hello World" --admin_user=$ADMIN_USERNAME --admin_password=$USER_PASSWORD  --admin_email=mmardi@gmail.com --path=/var/www/html/ --allow-root
 
-./wp-cli.phar user create $DB_USER mardi@gmail.com --role=editor --user_pass=$USER_PASSWORD --path=/var/www/html/ --allow-root
+./wp-cli.phar user create $DB_USER mardi@gmail.com --role=author --user_pass=$USER_PASSWORD --path=/var/www/html/ --allow-root
 
 mkdir run/php
 
