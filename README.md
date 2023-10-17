@@ -1,0 +1,1 @@
+This project aims to deepen knowledge in system administration through the use of Docker. Multiple Docker images will be virtualized within a personal virtual machine, allowing for hands-on experience in image management and system administration practices.
